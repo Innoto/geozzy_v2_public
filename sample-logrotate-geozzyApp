@@ -1,0 +1,40 @@
+# Change HOST_PROYECT_DIRECTORY
+
+/HOST_PROYECT_DIRECTORY/logs/*.log {
+  # su myUSER
+  create 640 myUSER root
+  missingok
+  daily
+  rotate 800
+  maxage 750
+  dateext
+  compress
+  notifempty
+
+  sharedscripts
+  postrotate
+    if /etc/init.d/apache2 status > /dev/null ; then \
+      /etc/init.d/apache2 reload > /dev/null; \
+    fi;
+  endscript
+  lastaction
+    chmod 400 /HOST_PROYECT_DIRECTORY/logs/*gz
+  endscript
+}
+
+
+/HOST_PROYECT_DIRECTORY/project/app/log/*.log {
+  su myUSER www-data
+  create 660 myUSER www-data
+  missingok
+  daily
+  rotate 800
+  maxage 750
+  dateext
+  compress
+  notifempty
+  sharedscripts
+  lastaction
+    chmod 400 /HOST_PROYECT_DIRECTORY/project/app/log/*gz
+  endscript
+}

@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#: /home/proxectos/geozzy/distModules/explorer/classes/view/templates/js/view/ExplorerActiveListMobileView.js:181
+msgid "Prioritizing map zone"
+msgstr "Priorisierung der Kartenzone"
+
+#: /home/proxectos/geozzy/distModules/explorer/classes/view/templates/js/view/filters/ExplorerFilterMinimapView.js:25
+msgid "All"
+msgstr "Alle"
+
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerBaseInLanding.tpl:12
+#: /home/proxectos/geozzy/classes/view/templates/explorerSaganInLanding.tpl:13
+#: /home/proxectos/geozzy/classes/view/templates/explorerList.tpl:11
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerList.tpl:11
+#: /home/proxectos/geozzy/classes/view/templates/explorerBaseInLanding.tpl:12
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerSaganInLanding.tpl:13
+msgid "Return to content"
+msgstr "Zurück zum Inhalt"
+
+#: /home/proxectos/geozzy/classes/view/templates/explorerList.tpl:17
+#: /home/proxectos/geozzy/classes/view/templates/explorer.tpl:17
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerList.tpl:17
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorer.tpl:17
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerBaseInLanding.tpl:19
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerSaganInLanding.tpl:19
+#: /home/proxectos/geozzy/classes/view/templates/explorerBaseInLanding.tpl:19
+#: /home/proxectos/geozzy/classes/view/templates/explorerSaganInLanding.tpl:19
+msgid "Apply"
+msgstr "Anwenden"
+
+#: /home/proxectos/geozzy/classes/view/templates/explorerList.tpl:20
+#: /home/proxectos/geozzy/classes/view/templates/explorer.tpl:20
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerList.tpl:20
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorer.tpl:20
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerBaseInLanding.tpl:22
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerSaganInLanding.tpl:22
+#: /home/proxectos/geozzy/classes/view/templates/explorerBaseInLanding.tpl:22
+#: /home/proxectos/geozzy/classes/view/templates/explorerSaganInLanding.tpl:22
+msgid "Clear filters"
+msgstr "Filter löschen"
+
+#: /home/proxectos/geozzy/classes/view/templates/explorerList.tpl:23
+#: /home/proxectos/geozzy/classes/view/templates/explorer.tpl:23
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerList.tpl:23
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorer.tpl:23
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerBaseInLanding.tpl:25
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerSaganInLanding.tpl:25
+#: /home/proxectos/geozzy/classes/view/templates/explorerBaseInLanding.tpl:25
+#: /home/proxectos/geozzy/classes/view/templates/explorerSaganInLanding.tpl:25
+msgid "List"
+msgstr "Liste"
+
+#: /home/proxectos/geozzy/classes/view/templates/explorer.tpl:24
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorer.tpl:24
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerBaseInLanding.tpl:26
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerSaganInLanding.tpl:26
+#: /home/proxectos/geozzy/classes/view/templates/explorerBaseInLanding.tpl:26
+#: /home/proxectos/geozzy/classes/view/templates/explorerSaganInLanding.tpl:26
+msgid "Map"
+msgstr "Karte"
+
+#: /home/proxectos/geozzy/classes/view/templates/explorerList.tpl:24
+#: /home/proxectos/geozzy/classes/view/templates/explorer.tpl:25
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerList.tpl:24
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorer.tpl:25
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerBaseInLanding.tpl:27
+#: /home/proxectos/geozzy/classes/view/templates/explorer_classes_view_templates_explorerSaganInLanding.tpl:27
+#: /home/proxectos/geozzy/classes/view/templates/explorerBaseInLanding.tpl:27
+#: /home/proxectos/geozzy/classes/view/templates/explorerSaganInLanding.tpl:27
+msgid "Filters"
+msgstr "Filter"

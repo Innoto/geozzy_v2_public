@@ -1,0 +1,482 @@
+//mixin with all css that depends on your style explorer
+/*******************************************************************************************/
+@mixin mixinDevel(){
+  .explorerContainer{
+    &.explorer-container-du{ background-color: rgba( 225, 71, 71, .7 ); }
+    &.explorer-container-map{ background-color: rgba( 71, 225, 118, .7 ); }
+    &.explorer-container-filter{ background-color: rgba( 71, 156, 225, .7 ); }
+    &.explorer-container-gallery{ background-color: rgba( 199, 198, 73, .7 ); }
+  }
+}
+/*******************************************************************************************/
+/*Ejecutar dentro de .explorerLayout*/
+@mixin explorerBase( $explDu-w: 100%, $explDu-h: 100%, $explMap-w: 100%, $explMap-h: 55%, $explFilter-w: 100%,
+   $explFilter-h: 10%, $explGallery-w: 100%, $explGallery-h: 35% ) {
+
+   position: relative;
+   height: 100vh;
+
+  .explorerContainer{
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+    &.explorer-container-du{
+      position: absolute;
+      z-index: 103;
+      width: $explDu-w;
+      height: $explDu-h;
+      display:none;
+      overflow: auto;
+    }
+    &.explorer-landing-flash,
+    &.explorer-loading{
+      position: absolute;
+      top:0px;
+      left: 0px;
+      z-index: 501;
+      width: 100%;
+      height: 100%;
+      display:none;
+    }
+    &.explorer-container-map{
+      width: $explMap-w;
+      height: $explMap-h;
+    }
+    &.explorer-container-filter{
+      width: $explFilter-w;
+      height: $explFilter-h;
+      overflow: auto;
+    }
+    &.explorer-container-gallery{
+      width: $explGallery-w;
+      height: $explGallery-h;
+      overflow: auto;
+    }
+  }
+  .explorerArrowLabel {
+    font-weight:bold;
+    font-size:13px;
+    width:18px;
+    height:20px;
+    padding-left:5px;
+    padding-top:1px;
+    color:white;
+    background-color:#425451;
+  }
+}
+/*Ejecutar dentro de .explorerLayout*/
+@mixin explorerBaseInLanding( $explDu-w: 100%, $explDu-h: 100%, $explMap-w: 100%, $explMap-h: 55%, $explFilter-w: 100%,
+   $explFilter-h: 10%, $explGallery-w: 100%, $explGallery-h: 35%, $hheight: $headerHeight ){
+  @include explorerBase( $explDu-w, $explDu-h, $explMap-w, $explMap-h, $explFilter-w, $explFilter-h, $explGallery-w, $explGallery-h );
+  .explorerContainer{
+    &.explorer-container-gallery{
+      min-height: $explGallery-h;
+      height: auto;
+    }
+    &.stick{
+      &.explorer-container-map{
+        position: fixed;
+        top: #{$hheight + $explFilter-h};
+        z-index: 100;
+      }
+      &.explorer-container-filter{
+        position: fixed !important;
+        top: $hheight;
+        z-index: 101;
+      }
+      &.explorer-container-gallery{
+        margin-top: $explFilter-h;
+        padding-top: $explMap-h;
+      }
+
+      &.explorer-loading-flash,
+      &.explorer-loading{
+        position: fixed;
+        top: $hheight;
+      }
+    }
+  }
+}
+/*******************************************************************************************/
+/*Ejecutar dentro de .explorerLayout*/
+@mixin explorerLayoutSagan( $explDu-w: 100%, $explDu-h: 100%, $explMap-w: 70%, $explMap-h: 100%, $explFilter-w: 400px,
+   $explFilter-h: 150px, $explGallery-w: 30%, $explGallery-h: 100%, $explGallery-minh: $explGallery-h, $hheight: $headerHeight) {
+   position: relative;
+   height: calc(100vh - #{$hheight} );
+   //height: 100vh;
+   &.stick{
+     height: auto;
+   }
+  .explorerContainer{
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    &.explorer-container-du{
+      position: absolute;
+      //top: $hheight;
+      bottom: 0;
+      z-index: 103;
+      width: $explDu-w;
+      height: $explDu-h;
+
+      display:none;
+      overflow: auto;
+    }
+    &.explorer-landing-flash,
+    &.explorer-loading{
+      position: absolute;
+      top:0px;
+      left: 0px;
+      z-index: 501;
+      width: 100%;
+      height: 100%;
+      display:none;
+    }
+    &.explorer-container-map{
+      width: $explMap-w;
+      height: $explMap-h;
+      float: left;
+      &.explorerElSticky{
+        height: 100%;
+        &.stick{
+          height: $explMap-h;
+        }
+      }
+    }
+    &.explorer-container-filter{
+      width: 100%;
+      max-width: $explFilter-w;
+      height: $explFilter-h;
+      position: absolute;
+      z-index: 100;
+      top: 30px;
+      left: 30px;
+    }
+    &.explorer-container-gallery{
+      width: $explGallery-w;
+      height: $explGallery-h;
+      min-height: $explGallery-minh;
+      float: right;
+      overflow: auto;
+    }
+    &.stick{
+      &.explorer-container-map{
+        position: fixed;
+        top: $hheight;
+      }
+      &.explorer-container-filter{
+        position: fixed !important;
+        top: calc(#{$hheight} + 30px) !important;
+      }
+      &.explorer-container-du{
+        position: fixed;
+      }
+      &.explorer-loading-flash,
+      &.explorer-loading{
+        position: fixed;
+        top: $hheight;
+      }
+    }
+  }
+  &.mapFull{
+    .explorer-container-map{
+      width: 100%;
+    }
+    .explorer-container-gallery{
+      display: none;
+    }
+  }
+  .explorerArrowLabel {
+    font-weight:bold;
+    font-size:13px;
+    width:18px;
+    height:20px;
+    padding-left:5px;
+    padding-top:1px;
+    color:white;
+    background-color:#425451;
+  }
+}
+/*******************************************************************************************/
+/*Ejecutar dentro de .explorerLayout*/
+@mixin explorerLayoutList( $explDu-w: 100%, $explDu-h: 100%, $explFilter-w: 400px,
+   $explFilter-h: 150px, $explGallery-w: 80%, $explGallery-h: 100%, $hheight: $headerHeight ) {
+   position: relative;
+   min-height: 100vh;
+  .explorerContainer{
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    &.explorer-container-du{
+      position: absolute;
+      z-index: 103;
+      width: $explDu-w;
+      height: $explDu-h;
+      display:none;
+      overflow: auto;
+    }
+    &.explorer-landing-flash,
+    &.explorer-loading{
+      position: absolute;
+      top:0px;
+      left: 0px;
+      z-index: 501;
+      width: 100%;
+      height: 100%;
+      display:none;
+    }
+    &.explorer-container-filter{
+      width: 100%;
+      max-width: $explFilter-w;
+      height: $explFilter-h;
+      position: absolute;
+      z-index: 100;
+      top: 0px;
+      left: 0px;
+    }
+    &.explorer-container-gallery{
+      width: $explGallery-w;
+      height: $explGallery-h;
+      float: right;
+      overflow: auto;
+    }
+    &.stick{
+      &.explorer-container-filter{
+        position: fixed !important;
+        top: $hheight + 0px !important;
+      }
+    }
+  }
+
+  .explorerArrowLabel {
+    font-weight:bold;
+    font-size:13px;
+    width:18px;
+    height:20px;
+    padding-left:5px;
+    padding-top:1px;
+    color:white;
+    background-color:#425451;
+  }
+}
+/*******************************************************************************************/
+/*******************************************************************************************/
+
+/*Ejecutar fuera de .explorerLayout*/
+@mixin explorerMobile( $expl-w: 100%, $expl-h: 100%, $buttonColor:#000, $buttonColorText:#fff, $buttonColorSelected:#000, $hheight: 0px ) {
+  position: inherit;
+  top: 0;
+  .explorerLayout{
+    min-height: calc(101vh - #{$hheight} );
+    position: relative;
+  }
+  .explorerContainer{
+    &.explorer-container-du{
+      width: $expl-w;
+      height: $expl-h;
+      position: fixed;
+      top: $hheight !important;
+      padding-top: 0 !important;
+      z-index: 203;
+      overflow: auto;
+      display:none;
+    }
+    &.explorer-container-map{
+      width: $expl-w;
+      height: calc(100vh - #{$hheight} );
+      position: fixed;
+      top: $hheight;
+      z-index: 201;
+    }
+    &.explorer-container-filter{
+      width: $expl-w;
+      height: calc(100vh - #{$hheight} );
+      overflow: auto;
+      position: fixed !important;
+      background-color: #fff;
+      top: $hheight;
+      z-index: 202;
+      .filtersContainer{
+        padding-bottom: 60px;
+      }
+    }
+    &.explorer-container-gallery{
+      border: 0;
+      width: $expl-w;
+      padding-bottom: 50px;
+      position: relative;
+      .explorerActiveListContent {
+        .activeListReset {
+          position: fixed;
+          top: $hheight;
+          left: 0;
+          z-index:2;
+          width:100%;
+          background-color: $buttonColor;
+          color:white;
+          padding:4px;
+          font-weight: bold;
+          i.info {
+            margin-right:5px;
+            border:2px solid #fff;
+            border-radius: 50%;
+            width:20px;
+            height:20px;
+            padding-left:5px;
+            margin-left:10px;
+          }
+          i.clear {
+            float:right;
+            color:white;
+            margin-right:10px;
+          }
+        }
+      }
+    }
+    &.explorer-landing-flash,
+    &.explorer-loading{
+      position: absolute;
+      top:0px;
+      left: 0px;
+      z-index: 501;
+      width: 100%;
+      height: 100%;
+      display:none;
+    }
+
+  }
+  .explorer-manage-mobile{
+    &.explorerElSticky{
+      display: none;
+      &.stick{
+        display: block;
+      }
+    }
+    .explorerButton{
+      background-color:$buttonColor;
+      color: $buttonColorText;
+      padding: 7px 10px;
+      cursor:pointer;
+      &.explorer-mobile-control-bmap,
+      &.explorer-mobile-control-blist {
+        border-right: 1px solid $buttonColorText;
+        position:fixed;
+        bottom: 15px;
+        right: 50%;
+        z-index: 201;
+        font-weight: bold;
+        text-transform: uppercase;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      &.explorer-mobile-control-bfilters {
+        border-left: 1px solid #fff;
+        position:fixed;
+        bottom: 15px;
+        left:50%;
+        z-index: 201;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        &.selected{
+          background-color: $buttonColorSelected;
+        }
+      }
+    }
+    .explorer-manage-filters-mobile{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      position:fixed;
+      bottom: 15px;
+      padding: 0px 15px;
+      z-index: 202;
+      .explorerButton{
+        flex-basis: 45%;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+/*Ejecutar dentro de .explorerLayout*/
+@mixin explorerMobileMapInfo( $buttonColor: #000 ){
+  background-color: #fff;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:160px;
+  font-size:11px;
+  z-index: 9000;
+  .gempiContent {
+    position:relative;
+    .gempiItem{
+      padding: 10px 40px;
+      position: absolute;
+      width: 100%;
+      .closeButton {
+        position: absolute;
+        top:5px;
+        right:10px;
+        font-size:16px;
+      }
+      .nextButton {
+        position: absolute;
+        top:20px;
+        height:60px;
+        text-align:right;
+        width:20px;
+        padding-top:54px;
+        right:10px;
+
+      }
+      .previousButton {
+        position: absolute;
+        top:20px;
+        height:60px;
+        text-align:left;
+        width:20px;
+        padding-top:54px;
+        left:10px;
+      }
+      button.accessButton {
+        background-color:  $buttonColor;
+        color:#fff;
+        margin-top:5px;
+        font-weight: bold;
+        cursor:pointer;
+        border:0;
+        padding:5px;
+        border-radius: 3px;
+      }
+      .gempiInfo {
+        margin-left:110px;
+
+
+        .gempiTitle {
+          margin-bottom:3px;
+          font-weight: bold;
+        }
+      }
+      .gempiImg img {
+        float:left;
+        margin-top:20px;
+        width:90px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

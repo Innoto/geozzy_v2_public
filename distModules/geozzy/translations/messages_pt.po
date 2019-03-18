@@ -1,0 +1,373 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/templates/js/generateModal.js:33
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/templates/js/generateModal.js:31
+msgid "Accept"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:10
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:10
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:73
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:361
+msgid "Title"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:14
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:14
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:78
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:366
+msgid "Short description"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:51
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:51
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyTaxonomytermView.php:75
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:371
+msgid "Medium description"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:56
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:56
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:376
+msgid "Content"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:61
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:61
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:384
+msgid "Image"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:67
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:67
+msgid "None"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:73
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:73
+msgid "External Url"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:80
+#: /home/proxectos/geozzy/classes/view/templates/resourceViewBlock.tpl:80
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:430
+msgid "Collections"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/rTypeFormLocationPanel.tpl:16
+#: /home/proxectos/geozzy/classes/view/templates/rTypeFormLocationPanel.tpl:16
+msgid ""
+"Haz click en el lugar donde se ubica tu centro educativo con la mayor "
+"precisión que puedas, podrás arrastrar y soltar la localización"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/rTypeFormLocationPanel.tpl:31
+#: /home/proxectos/geozzy/classes/view/templates/rTypeFormLocationPanel.tpl:31
+msgid "Automatic Location"
+msgstr ""
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceMultimediaViewBlock.tpl:59
+#: /home/proxectos/geozzy/classes/view/templates/resourceMultimediaViewBlock.tpl:59
+msgid "See more..."
+msgstr "Ver mais..."
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceMultimediaViewBlock.tpl:61
+#: /home/proxectos/geozzy/classes/view/templates/resourceMultimediaViewBlock.tpl:61
+msgid "Less"
+msgstr "Menos"
+
+#: /home/proxectos/geozzy/classes/view/templates/resourceCollectionViewBlock.tpl:12
+#: /home/proxectos/geozzy/classes/view/templates/resourceCollectionViewBlock.tpl:12
+msgid "Find out!"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyTaxonomytermView.php:58
+msgid "ID Name (WARNING)"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyTaxonomytermView.php:64
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyTaxonomytermView.php:65
+msgid "Upload an image"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyTaxonomytermView.php:71
+msgid "Name"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:83
+msgid "Description"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:87
+msgid "Resources"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:128
+msgid "Upload multimedia "
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:132
+msgid "Upload multiple files"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:138
+msgid "Add external link"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:143
+msgid "Descriptive image of the gallery (opcional)"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/view/GeozzyCollectionView.php:160
+msgid "Save"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:357
+msgid "Time creation"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:380
+msgid "External URL"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:390
+msgid "SEO: URL"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:395
+msgid "SEO: Alias"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:399
+msgid "Priority"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:400
+msgid "Normal"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:400
+msgid "High"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:400
+msgid "Low"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:404
+msgid "SEO: Head Keywords"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:409
+msgid "SEO: Head Description"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:414
+msgid "SEO: Head Title"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:419
+msgid "Extra information 1"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:424
+msgid "Extra information 2"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:440
+msgid "Create Collection"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:441
+msgid "Add Collection"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:447
+msgid "Galleries"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:457
+msgid "Create Multimedia Gallery"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:458
+msgid "Add Multimedia Gallery"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:462
+msgid "Publicado"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:465
+msgid "Topics"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:468
+msgid "Starred"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:471
+msgid "Latitude"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:475
+msgid "Longitude"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:479
+msgid "Zoom"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:511
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:521
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:536
+msgid "Send"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:513
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:523
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:538
+msgid "Cancel"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:583
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:593
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:608
+msgid "El servidor no considera válidos los datos recibidos."
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:588
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:598
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:613
+msgid ""
+"Ha sucedido un problema con los ficheros adjuntos. Puede que sea necesario "
+"subirlos otra vez."
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:614
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:624
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:639
+msgid "La fecha de creación no es válida"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1034
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1579
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1637
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1044
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1634
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1692
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1629
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1687
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1042
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1627
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1774
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1776
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1057
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1662
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1809
+msgid "Error setting values"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1694
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1749
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1744
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1835
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1837
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1870
+msgid "Error setting collection values"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1793
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1848
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1843
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1934
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1936
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1969
+msgid "Error setting URL alias"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1807
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1862
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1857
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1948
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1950
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:1983
+msgid "Error setting URL alias 2"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:235
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:237
+msgid "Publication"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:244
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:246
+msgid "SEO"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:259
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:261
+msgid "Select a image"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:268
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:270
+msgid "Location"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:275
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:277
+msgid "Multimedia galleries"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:284
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:286
+msgid "Collections of related resources"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:293
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:295
+msgid "Information"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:336
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:338
+msgid "Comments"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:345
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:347
+msgid "View"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:354
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:356
+msgid "Social Networks"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:363
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:365
+msgid "Contact"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:372
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:374
+msgid "Event"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/ResourceController.php:395
+msgid "SEO: URL Secundaria (Alias)"
+msgstr ""
+
+#: /home/proxectos/geozzy/distModules/geozzy/classes/controller/RTypeController.php:320
+msgid "Unknown"
+msgstr ""

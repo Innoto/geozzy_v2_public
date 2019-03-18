@@ -1,0 +1,397 @@
+//mixin with all css that depends on your style
+/*******************************************************************************************/
+@mixin initTravelPlanner( $tp-h: 100vh, $tpList-w: 320px, $tpPlan-w: 45%, $tpBar-h: 90px, $colorDaysActive:#333, $colorDaysInPlan:#ccc, $nestableTPItem-h: 50px, $header-h: 0px, $miniheader-h: 0px  ){
+  @include travelPlanner(  $tp-h,  $tpList-w, $tpPlan-w, $tpBar-h, $colorDaysActive, $colorDaysInPlan, $header-h, ($header-h + $tpBar-h), $miniheader-h );
+  @include nestableTravelPlannerTheme( $nestableTPItem-h );
+}
+/*******************************************************************************************/
+@mixin travelPlanner(
+  //TP-OPTIONS
+  $tp-h,
+  //TPLIST-OPTIONS
+  $tpList-w,
+  //TPPLAN-OPTIONS
+  $tpPlan-w,
+  //TPBAR-OPTIONS
+  $tpBar-h,
+  //COLORS
+  $colorDaysActive,
+  $colorDaysInPlan,
+  //HEADER
+  $header-h,
+  $headerBar-h,
+  $miniheader-h
+  ){
+  #travelPlannerSec{
+    padding: 0;
+    margin: 0;
+    .travelPlanner{
+      position: relative;
+      min-height: calc(~"100vh - "$headerBar-h )  ;
+      .travelPlannerBar{
+        width: 100%;
+        height: $tpBar-h;
+        position: fixed;
+        top: $header-h;
+        z-index: 3;
+        .travelPlannerDateButtons{
+          .travelPlannerDateBar{
+            float: left;
+          }
+          .travelPlannerButtonsBar{
+            float: right;
+          }
+        }
+        .travelPlannerFilterBar{
+          .mode2{
+            .days{
+              li{
+                float: left;
+              }
+            }
+          }
+        }
+      }
+      .travelPlannerList{
+        width: $tpList-w;
+        height: calc(~"100vh - "$header-h);
+        position: fixed;
+        top: ($tpBar-h + $header-h);
+        padding: 20px;
+        .travelPlannerResources{
+          overflow: auto;
+          height: calc(~'100% -' $tpBar-h);
+        }
+      }//travelPlannerList
+
+      .travelPlannerPlan{
+        width: $tpPlan-w;
+        min-height: 500px;
+        padding: 20px;
+        padding-top:($tpBar-h);
+      }//travelPlannerPlan
+      .travelPlannerMap{
+        display:block;
+        width: calc(~"100% - "$tpList-w );
+        height: calc(~"100vh - "$headerBar-h);
+        position: fixed;
+        top:($header-h + $tpBar-h);
+        right: 0;
+      }//travelPlannerMap
+      .travelPlannerMapPlan{
+        display:block;
+        width: calc(~"100% - "$tpPlan-w );
+        height: calc(~"100vh - "$headerBar-h);
+        position: fixed;
+        top:($header-h + $tpBar-h);
+        right: 0;
+        .mapFilterDay{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 101;
+          .filterDay-previous,
+          .filterDay-next{
+            cursor:pointer;
+            &.notVisible{
+              visibility: hidden;
+            }
+          }
+        }
+      }//travelPlannerMapPlan
+    }
+    .travelPlannerMobile{
+      position: relative;
+      min-height: calc(~"100vh - "$miniheader-h );
+      .travelPlannerBar{
+        width: 100%;
+        max-height: $tpBar-h;
+        position: fixed;
+        top: $miniheader-h;
+        overflow: hidden;
+        z-index: 3;
+
+        .travelPlannerFilterBar{
+          .mode2{
+            .days{
+              li{
+                float: left;
+              }
+            }
+          }
+        }
+      }
+      .travelPlannerList{
+        width: 100%;
+        /*height: calc(~"100vh - "$miniheader-h);*/
+        padding: 10px;
+        .travelPlannerResources{
+          padding-bottom: 20px;
+        }
+      }//travelPlannerList
+      .travelPlannerPlan{
+        width: 100%;
+        min-height: 500px;
+        padding: 10px;
+      }//travelPlannerPlan
+      .travelPlannerMapPlan{
+        display:block;
+        width: 100%;
+        height: calc(~"100vh - "$miniheader-h );
+
+        .mapFilterDay{
+          position: absolute;
+          top: 20px;
+          left: 10px;
+          z-index: 101;
+          .filterDay-previous,
+          .filterDay-next{
+            cursor:pointer;
+            &.notVisible{
+              visibility: hidden;
+            }
+          }
+        }
+      }//travelPlannerMapPlan
+
+      .tp-gotoMobilePlan,
+      .tp-gotoMobileChangeDates,
+      .tp-gotoMobileList,
+      .tp-gotoMobileMap{
+        position: fixed;
+        bottom: 10px;
+        background: $colorDaysActive;
+        padding: 7px 15px;
+        color: #fff;
+        font-weight: bold;
+        z-index: 101;
+      }
+      .tp-gotoMobileChangeDates{
+        right: 0;
+      }
+    }
+  } //#travelPlannerSec
+  #resourceTpModal{
+    .resourceTp{
+      .selectorDays{
+        list-style: none;
+        list-style-type: none;
+        li{
+          cursor: pointer;
+          border: 1px solid $colorDaysActive;
+          float: left;
+          width: calc(~'25% - 4px' );
+          padding: 10px;
+          margin: 2px;
+          &.inPlan{
+            background: $colorDaysInPlan;
+          }
+          &.active{
+            color: white;
+            background: $colorDaysActive;
+          }
+        }
+      }
+    }
+  }
+} //.travelPlanner()
+
+@mixin nestableTravelPlannerTheme( $nestableTPItem-h ){
+  .gzznestable {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px;
+    line-height: 20px;
+
+    .dd-list {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .dd-list {
+        padding-left: 30px;
+      }
+    }
+
+    .dd-item > button {
+      position: relative;
+      cursor: pointer;
+      float: left;
+      width: 25px;
+      height: 20px;
+      margin: 5px 0;
+      padding: 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border: 0;
+      background: transparent;
+      font-size: 12px;
+      line-height: 1;
+      text-align: center;
+      font-weight: bold;
+      box-shadow:none;
+    }
+    .dd-item > button:hover {
+      color: #2ea8e5;
+    }
+    .dd-item > button:before {
+      display: block;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      text-indent: 0;
+    }
+    .dd-item > button.dd-expand:before {
+      content: '+';
+      font-size:16px;
+    }
+    .dd-item > button.dd-collapse:before {
+      content: '-';
+      font-size:18px;
+    }
+
+    .dd-item-container{
+      width:100%;
+      background: #fff;
+      box-sizing: border-box;
+      display: block;
+      margin: 4px 0;
+      color: #444;
+      text-decoration: none;
+
+      .dd-handle {
+        display: block;
+        height: $nestableTPItem-h + 10px;
+        float: left;
+        margin: 2px;
+        padding: 5px 0;
+        color: #333;
+        text-decoration: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .icon-handle{
+          float:left;
+          margin: 3px 5px 3px 3px;
+          height: 25px;
+          line-height:25px;
+          width: 25px;
+          vertical-align:middle;
+          text-align: center;
+          color: #333;
+          text-decoration: none;
+          border-radius: 3px;
+          cursor: pointer;
+
+          &:hover{
+            color: #2ea8e5;
+          }
+        }
+        .term-icon{
+          max-height: 25px;
+          display: block;
+          float: right;
+          line-height:25px;
+          vertical-align:middle;
+          margin: 3px 10px 0px 0px ;
+        }
+      }
+
+      .dd-content {
+        float:left;
+        width: calc(~"100% - 160px");
+        display: block;
+        margin: 5px;
+        vertical-align:middle;
+        color: #333;
+        text-decoration: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+
+        .nestableActions{
+          float: right;
+          width: 30px;
+          font-weight: bold;
+          button{
+            height: 25px;
+            line-height:25px;
+            width: 25px;
+            padding: 0px;
+            font-size: 18px;
+            border:none;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .gzznestable.dd-list,
+  .gzznestable .dd-list,
+  .gzznestable .dd-item,
+  .gzznestable .dd-empty,
+  .gzznestable .dd-placeholder {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .gzznestable .dd-expand {
+    display: none;
+  }
+  .gzznestable .dd-collapsed .dd-list,
+  .gzznestable .dd-collapsed .dd-collapse {
+    display: none;
+  }
+  .gzznestable .dd-collapsed .dd-expand {
+    display: block;
+  }
+  .gzznestable .dd-empty,
+  .gzznestable .dd-placeholder {
+    margin: 5px 0;
+    padding: 0;
+    min-height: $nestableTPItem-h;
+    background: #CCCCCC;
+    border: 2px dashed #b6bcbf;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .gzznestable .dd-empty {
+    border: 1px dashed #b6bcbf;
+    min-height: $nestableTPItem-h + 10px;
+    background-color: #CCCCCC;
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+  }
+  .gzznestable.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  .gzznestable.dd-dragel > .dd-item .dd-handle {
+
+  }
+  .gzznestable.dd-dragel .dd-handle {
+
+  }
+
+  .gzznestable.no-sortable{
+    .icon-handle{ display:none; }
+  }
+}
